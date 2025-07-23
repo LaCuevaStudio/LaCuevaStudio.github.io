@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Cueva Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Montserrat', sans-serif; background: #f5f5f5; color: #333; }
+    header { background: #111; color: white; text-align: center; padding: 2rem 1rem; }
+    header img { max-width: 200px; height: auto; }
+    header p { font-size: 1.2rem; margin-top: 0.5rem; }
+    nav { background: #333; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 1rem; }
+    .nav-toggle { display: block; cursor: pointer; font-size: 1.5rem; color: white; }
+    .nav-links { display: none; flex-direction: column; width: 100%; }
+    .nav-links.active { display: flex; }
+    .nav-links a { color: white; text-decoration: none; padding: 1rem; text-align: center; }
+    @media (min-width: 768px) {
+      .nav-toggle { display: none; }
+      .nav-links { display: flex !important; flex-direction: row; width: auto; }
+    }
+    .section { padding: 2rem; text-align: center; }
+    .section h2 { font-size: 2rem; margin-bottom: 1rem; }
+    .section p { max-width: 600px; margin: 0 auto 1rem; }
+    .button { display: inline-block; background: #f57c00; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 5px; margin-top: 1rem; }
+    .button:hover { background: #e65100; }
+    .carousel { display: flex; overflow: hidden; max-width: 600px; margin: 1rem auto; border-radius: 10px; }
+    .carousel img { width: 100%; height: auto; animation: slide 9s infinite; }
+    @keyframes slide { 0% { transform: translateX(0%); } 33% { transform: translateX(-100%); } 66% { transform: translateX(-200%); } 100% { transform: translateX(0%); } }
+    footer { background: #111; color: white; text-align: center; padding: 1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.imgur.com/Tui4bUk.png" alt="La Cueva Studio logo">
+    <p>Creatividad que se toca.</p>
+    <p style="font-style: italic; font-size: 1rem; margin-top: 0.5rem;">De tu mente a nuestras manos.</p>
+  </header>
+  <nav>
+    <span class="nav-toggle" onclick="toggleMenu()">☰</span>
+    <div class="nav-links" id="navLinks">
+      <a href="llaveros.html">Llaveros</a>
+      <a href="ropa-laboral.html">Ropa Laboral</a>
+      <a href="tazas.html">Tazas</a>
+      <a href="carteleria-lonas.html">Cartelería & Lonas</a>
+      <a href="tarjetas-visita.html">Tarjetas de visita</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <div class="section" id="llaveros">
+    <h2>Llaveros</h2>
+    <div class="carousel">
+      <img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753269840/WhatsApp_Image_2024-03-01_at_11.29.14_uiwhw6.jpg" alt="Llaveros 1">
+      <img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753269839/WhatsApp_Image_2024-03-01_at_11.29.14_2_wnxl8k.jpg" alt="Llaveros 2">
+      <img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753269838/WhatsApp_Image_2024-03-01_at_11.29.12_j7hvau.jpg" alt="Llaveros 3">
+    </div>
+    <p>Llaveros de metacrilato con formas y colores personalizados.</p>
+    <a href="llaveros.html" class="button">Ver más</a>
+  </div>
+
+  <div class="section" id="ropa">
+    <h2>Ropa Laboral</h2>
+    <div class="carousel">
+      <img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753270010/CL003_n4xaas.png" alt="Ropa 1">
+      <img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753270004/CL001_1_geawk1.png" alt="Ropa 2">
+      <img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753270008/CL002_l9ervv.png" alt="Ropa 3">
+    </div>
+    <p>Uniformes y ropa laboral personalizada para tu empresa o negocio.</p>
+    <a href="ropa-laboral.html" class="button">Ver más</a>
+  </div>
+
+  <div class="section" id="tazas">
+    <h2>Tazas</h2>
+    <div class="carousel">
+      <img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753270523/SV022_cp8dxs.jpg" alt="Tazas 1">
+      <img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753270521/SV004_piltcu.jpg" alt="Tazas 2">
+      <img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753270520/Mockup_6_ogocbk.jpg" alt="Tazas 3">
+    </div>
+    <p>Tazas con diseño a tu elección.</p>
+    <a href="tazas.html" class="button">Ver más</a>
+  </div>
+
+  <div class="section" id="carteleria">
+    <h2>Cartelería & Lonas</h2>
+    <div class="carousel">
+      <img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753270591/POSTER2_bnr3wr.jpg" alt="Cartelería 1">
+      <img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753270587/ENGRAVING_x0vbzx.jpg" alt="Cartelería 2">
+      <img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753270581/POSTER_MOSAICO_tdiquy.jpg" alt="Cartelería 3">
+    </div>
+    <p>Cartelería y lonas de gran formato para eventos, promociones y decoración.</p>
+    <a href="carteleria-lonas.html" class="button">Ver más</a>
+  </div>
+
+  <div class="section" id="tarjetas-visita">
+    <h2>Tarjetas de visita</h2>
+    <div class="carousel">
+      <img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753271099/freepik__the-style-is-candid-image-photography-with-natural__24402_jxhx72.png" alt="Tarjeta 1">
+      <img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753271100/freepik__the-style-is-candid-image-photography-with-natural__33593_hdcbps.png" alt="Tarjeta 2">
+      <img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753271101/freepik__the-style-is-candid-image-photography-with-natural__40291_fpbqko.png" alt="Tarjeta 3">
+    </div>
+    <p>Impresiona con tarjetas de visita de alta calidad, impresas en papel premium y acabados personalizados.</p>
+    <a href="tarjetas-visita.html" class="button">Ver más</a>
+  </div>
+
+  <footer>
+    <div class="section" id="contacto">
+      <h2>Contacto</h2>
+      <p>¿Tienes dudas o quieres pedir presupuesto? Escríbenos a <strong>hola@lacuevastudio.com</strong> o completa el formulario en cualquier sección del sitio.</p>
+    </div>
+    <p>&copy; 2025 La Cueva Studio. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() { document.getElementById('navLinks').classList.toggle('active'); }
+  </script>
+</body>
+</html>

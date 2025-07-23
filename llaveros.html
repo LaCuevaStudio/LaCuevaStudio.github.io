@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Llaveros | La Cueva Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <style>
+    body { font-family: 'Montserrat', sans-serif; background: #f5f5f5; margin: 0; color: #333; }
+    header { background: #111; color: white; text-align: center; padding: 2rem 1rem; }
+    header img { max-width: 200px; height: auto; }
+    header p { font-size: 1.2rem; margin-top: 0.5rem; }
+    .section { padding: 2rem; text-align: center; }
+    .section h2 { font-size: 2rem; margin-bottom: 1rem; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; max-width: 1000px; margin: 0 auto; }
+    .gallery img { width: 100%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    .gallery img:hover { transform: scale(1.05); }
+    a.button { display: inline-block; margin-top: 1.5rem; background: #f57c00; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 5px; margin-right: 1rem; }
+    a.button:hover { background: #e65100; }
+    footer { background: #111; color: white; text-align: center; padding: 1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.imgur.com/Tui4bUk.png" alt="La Cueva Studio logo">
+    <p>Creatividad que se toca.</p>
+    <p style="font-style: italic; font-size: 1rem; margin-top: 0.5rem;">De tu mente a nuestras manos.</p>
+  </header>
+
+  <div class="section">
+    <h2>Llaveros personalizados</h2>
+    <p>Explora algunos de nuestros trabajos con metacrilato, formas creativas y acabados únicos.</p>
+    <div class="gallery">
+      <a href="#"><img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753269840/WhatsApp_Image_2024-03-01_at_11.29.14_uiwhw6.jpg" alt="Llavero 1"></a>
+      <a href="#"><img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753263839/WhatsApp_Image_2024-03-01_at_11.29.14_2_wnxl8k.jpg" alt="Llavero 2"></a>
+      <a href="#"><img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753269838/WhatsApp_Image_2024-03-01_at_11.29.12_j7hvau.jpg" alt="Llavero 3"></a>
+      <a href="#"><img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753269838/WhatsApp_Image_2024-03-01_at_11.29.11_2_vdb8fz.jpg" alt="Llavero 4"></a>
+      <a href="#"><img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753269834/WhatsApp_Image_2024-02-29_at_11.25.37_fkku26.jpg" alt="Llavero 5"></a>
+      <a href="#"><img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753269833/WhatsApp_Image_2024-02-29_at_11.25.35_icdvub.jpg" alt="Llavero 6"></a>
+    </div>
+
+    <a href="index.html#contacto" class="button">Solicitar presupuesto</a>
+    <a href="index.html" class="button">Volver al inicio</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 La Cueva Studio. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (typeof lightbox !== "undefined") {
+        lightbox.option({ resizeDuration: 200, wrapAround: true });
+      }
+    });
+  </script>
+</body>
+</html>
