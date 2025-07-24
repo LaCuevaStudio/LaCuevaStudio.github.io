@@ -2,27 +2,77 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ropa Laboral - La Cueva Studio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Ropa Laboral | La Cueva Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      text-align: center;
+      color: #333;
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin-top: 2rem;
+      font-weight: 700;
+      color: #222;
+    }
+    p.subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #666;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .gallery img {
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .back-buttons {
+      margin: 2rem 0;
+    }
+    .back-buttons a {
+      display: inline-block;
+      background: #f57c00;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      margin: 0 0.5rem;
+      transition: background 0.3s;
+    }
+    .back-buttons a:hover {
+      background: #e65100;
+    }
+  </style>
 </head>
 <body>
+  
+  <header style="background:#111;color:white;text-align:center;padding:2rem 1rem;">
+    <img src="https://i.imgur.com/Tui4bUk.png" alt="Logo La Cueva Studio" style="max-width:200px;">
+    <p style="font-style: italic; font-size: 1.2rem;">De tu mente a nuestras manos.</p>
+  </header>
 
-<h1>Ropa Laboral</h1>
-<p>Uniformes y vestuario laboral personalizados para tu empresa.</p>
-
-<div class="gallery-row">
-  <div class="gallery-column"><img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/ropa1.jpg" alt="Ropa laboral 1"></div>
-  <div class="gallery-column"><img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/ropa2.jpg" alt="Ropa laboral 2"></div>
-  <div class="gallery-column"><img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/ropa3.jpg" alt="Ropa laboral 3"></div>
-  <div class="gallery-column"><img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/ropa4.jpg" alt="Ropa laboral 4"></div>
-  <div class="gallery-column"><img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/ropa5.jpg" alt="Ropa laboral 5"></div>
-  <div class="gallery-column"><img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/ropa6.jpg" alt="Ropa laboral 6"></div>
-  <div class="gallery-column"><img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/ropa7.jpg" alt="Ropa laboral 7"></div>
-  <div class="gallery-column"><img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/ropa8.jpg" alt="Ropa laboral 8"></div>
-</div>
-
-<p><a href="index.html">Volver al inicio</a></p>
-
+  <h1>Ropa Laboral</h1>
+  <p class="subtitle">Equipamiento laboral personalizado para tu empresa o marca.</p>
+  <div class="gallery">
+    <img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753270004/CL001_1_geawk1.png" alt="" style="max-width:300px; border-radius:10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753292964/Copia_de_PATINETE_ROPA_LABORAL_endtiw.jpg" alt="" style="max-width:300px; border-radius:10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753289286/Copia_de_SL001_wgixaz.png" alt="" style="max-width:300px; border-radius:10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753270047/SL001_oc83op.png" alt="" style="max-width:300px; border-radius:10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753270010/CL003_n4xaas.png" alt="" style="max-width:300px; border-radius:10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+  </div>
+  <div class="back-buttons">
+    <a href="index.html">← Volver al inicio</a>
+    <a href="mailto:info@lacuevastudio.es?subject=Presupuesto%20desde%20web">Pedir presupuesto</a>
+  </div>
 </body>
 </html>

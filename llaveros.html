@@ -2,120 +2,77 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Llaveros Personalizados - La Cueva Studio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Llaveros | La Cueva Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      text-align: center;
+      color: #333;
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin-top: 2rem;
+      font-weight: 700;
+      color: #222;
+    }
+    p.subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #666;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .gallery img {
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .back-buttons {
+      margin: 2rem 0;
+    }
+    .back-buttons a {
+      display: inline-block;
+      background: #f57c00;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      margin: 0 0.5rem;
+      transition: background 0.3s;
+    }
+    .back-buttons a:hover {
+      background: #e65100;
+    }
+  </style>
 </head>
 <body>
+  
+  <header style="background:#111;color:white;text-align:center;padding:2rem 1rem;">
+    <img src="https://i.imgur.com/Tui4bUk.png" alt="Logo La Cueva Studio" style="max-width:200px;">
+    <p style="font-style: italic; font-size: 1.2rem;">De tu mente a nuestras manos.</p>
+  </header>
 
-<h1>Llaveros Personalizados</h1>
-<p>Explora nuestra galería de llaveros personalizados:</p>
-
-<!-- Thumbnails to open lightbox -->
-<div class="gallery-row">
-  <div class="gallery-column">
-    <img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/llavero1.jpg" onclick="openModal();currentSlide(1)" alt="Llavero personalizado 1">
+  <h1>Llaveros</h1>
+  <p class="subtitle">Llaveros a tu elección, con formas, colores y acabados personalizados.</p>
+  <div class="gallery">
+    <img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753269840/WhatsApp_Image_2024-03-01_at_11.29.14_uiwhw6.jpg" alt="" style="max-width:300px; border-radius:10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753269839/WhatsApp_Image_2024-03-01_at_11.29.14_2_wnxl8k.jpg" alt="" style="max-width:300px; border-radius:10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753269838/WhatsApp_Image_2024-03-01_at_11.29.12_j7hvau.jpg" alt="" style="max-width:300px; border-radius:10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753269834/WhatsApp_Image_2024-02-29_at_11.25.37_fkku26.jpg" alt="" style="max-width:300px; border-radius:10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753269833/WhatsApp_Image_2024-02-29_at_11.25.35_icdvub.jpg" alt="" style="max-width:300px; border-radius:10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   </div>
-  <div class="gallery-column">
-    <img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/llavero2.jpg" onclick="openModal();currentSlide(2)" alt="Llavero personalizado 2">
+  <div class="back-buttons">
+    <a href="index.html">← Volver al inicio</a>
+    <a href="mailto:info@lacuevastudio.es?subject=Presupuesto%20desde%20web">Pedir presupuesto</a>
   </div>
-  <div class="gallery-column">
-    <img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/llavero3.jpg" onclick="openModal();currentSlide(3)" alt="Llavero personalizado 3">
-  </div>
-  <div class="gallery-column">
-    <img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/llavero4.jpg" onclick="openModal();currentSlide(4)" alt="Llavero personalizado 4">
-  </div>
-</div>
-
-<!-- The Modal / Lightbox -->
-<div id="lightboxModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/llavero1.jpg" style="width:100%" alt="Llavero personalizado 1">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/llavero2.jpg" style="width:100%" alt="Llavero personalizado 2">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/llavero3.jpg" style="width:100%" alt="Llavero personalizado 3">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/llavero4.jpg" style="width:100%" alt="Llavero personalizado 4">
-    </div>
-
-    <!-- Next/previous controls -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <!-- Caption text -->
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-    <!-- Thumbnail image controls -->
-    <div class="gallery-row">
-      <div class="gallery-column">
-        <img class="demo" src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/llavero1.jpg" onclick="currentSlide(1)" alt="Llavero personalizado 1">
-      </div>
-      <div class="gallery-column">
-        <img class="demo" src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/llavero2.jpg" onclick="currentSlide(2)" alt="Llavero personalizado 2">
-      </div>
-      <div class="gallery-column">
-        <img class="demo" src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/llavero3.jpg" onclick="currentSlide(3)" alt="Llavero personalizado 3">
-      </div>
-      <div class="gallery-column">
-        <img class="demo" src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/llavero4.jpg" onclick="currentSlide(4)" alt="Llavero personalizado 4">
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<p><a href="index.html">Volver al inicio</a></p>
-
-<!-- Lightbox script -->
-<script>
-function openModal() {
-  document.getElementById("lightboxModal").style.display = "block";
-}
-function closeModal() {
-  document.getElementById("lightboxModal").style.display = "none";
-}
-let slideIndex = 1;
-showSlides(slideIndex);
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) { slideIndex = 1; }
-  if (n < 1) { slideIndex = slides.length; }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-
 </body>
 </html>

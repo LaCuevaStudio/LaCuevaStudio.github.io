@@ -2,27 +2,75 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Regalos de Empresa - La Cueva Studio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Regalos de Empresa | La Cueva Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      text-align: center;
+      color: #333;
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin-top: 2rem;
+      font-weight: 700;
+      color: #222;
+    }
+    p.subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #666;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .gallery img {
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .back-buttons {
+      margin: 2rem 0;
+    }
+    .back-buttons a {
+      display: inline-block;
+      background: #f57c00;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      margin: 0 0.5rem;
+      transition: background 0.3s;
+    }
+    .back-buttons a:hover {
+      background: #e65100;
+    }
+  </style>
 </head>
 <body>
+  
+  <header style="background:#111;color:white;text-align:center;padding:2rem 1rem;">
+    <img src="https://i.imgur.com/Tui4bUk.png" alt="Logo La Cueva Studio" style="max-width:200px;">
+    <p style="font-style: italic; font-size: 1.2rem;">De tu mente a nuestras manos.</p>
+  </header>
 
-<h1>Regalos de Empresa</h1>
-<p>Sorprende a tus clientes y empleados con regalos corporativos personalizados.</p>
-
-<div class="gallery-row">
-  <div class="gallery-column"><img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/regalo1.jpg" alt="Regalo de empresa 1"></div>
-  <div class="gallery-column"><img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/regalo2.jpg" alt="Regalo de empresa 2"></div>
-  <div class="gallery-column"><img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/regalo3.jpg" alt="Regalo de empresa 3"></div>
-  <div class="gallery-column"><img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/regalo4.jpg" alt="Regalo de empresa 4"></div>
-  <div class="gallery-column"><img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/regalo5.jpg" alt="Regalo de empresa 5"></div>
-  <div class="gallery-column"><img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/regalo6.jpg" alt="Regalo de empresa 6"></div>
-  <div class="gallery-column"><img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/regalo7.jpg" alt="Regalo de empresa 7"></div>
-  <div class="gallery-column"><img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/regalo8.jpg" alt="Regalo de empresa 8"></div>
-</div>
-
-<p><a href="index.html">Volver al inicio</a></p>
-
+  <h1>Regalos de Empresa</h1>
+  <p class="subtitle">Detalles únicos para empresas y eventos. ¡Sorprende con creatividad!</p>
+  <div class="gallery">
+    <img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753284506/candid-image-photography-with-natura2l_qo6imq.png" alt="" style="max-width:300px; border-radius:10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753284506/freepik__the-style-is-candid-image-photography-with-natural__17578_eaoj0d.png" alt="" style="max-width:300px; border-radius:10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dtks4ykwd/image/upload/v1753271100/freepik__the-style-is-candid-image-photography-with-natural__33593_hdcbps.png" alt="" style="max-width:300px; border-radius:10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+  </div>
+  <div class="back-buttons">
+    <a href="index.html">← Volver al inicio</a>
+    <a href="mailto:info@lacuevastudio.es?subject=Presupuesto%20desde%20web">Pedir presupuesto</a>
+  </div>
 </body>
 </html>
